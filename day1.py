@@ -33,9 +33,90 @@ print(1+1==2)
 # a='hghhjhj  jhf'
 # print(len(a))
 
-a="学习python的第一天"
-b="要继续加油!"
-print(a)
-print(b)
-print("a+b的长度：",len(a)+len(b))
+# a="学习python的第一天"
+# b="要继续加油!"
+# print(a)
+# print(b)
+# print("a+b的长度：",len(a)+len(b))
 #测试第二次向github提交代码
+#元组,下标(从零开始编号)
+"""a = (1,2,3,4,"字符串","zifuchuan","字符串",True,False)
+print (a[4])
+#切片
+print(a[0:4])   #左闭右开
+print(a[:5])
+print(a[:])
+print(a[1:5])
+#方法
+print(a.index("字符串"))
+print(a.count("字符串"))"""
+#二维元组
+"""a = (1,2,3,4,"字符串","zifuchuan","字符串",True)
+b = (a,"zifuchuan","字符串",0)
+print(b[0][2])"""
+#元组一旦写好之后是不可以修改的，但是数组可以修改
+
+#数组
+"""a = [1,2,3,4,"字符串","zifuchuan","字符串",True,False]
+a.append("添加的数据")#只能从尾末插入数据
+a.insert(4,"在任意位置插入数据")#insert可以在数组任意位置插入数据
+a.pop(3)#类似于剪切的作用
+b=a.pop(0)
+c=a.pop(0)
+#a.clear()
+print (a)
+print(b+c)
+x=["你好","不好"]
+a.extend(x)#可以将数组插入数组中
+print(a)
+a.remove("zifuchuan")#删除某个值
+print(a)
+a.remove(0)
+print(a)
+xx=[0,False,True,1]
+b=xx.count(0)
+print(b)
+#下标不要超出范围=越界
+xxx=[0,1,2,3]
+print(xxx[5])"""
+#字典
+"""字典的特点
+1.字典中的值是没有顺序的
+2.字典的结构必须是键值对的结构。key：value
+3.字典的取值是通过key取value
+4.所有的字符串都要加""
+"""
+a={"name":"张三","age":26,0:"hahhaha"}
+#取值
+print(a["name"])
+#新增
+a["high"]="180cm"
+print(a)
+#修改
+a["name"]=["李四"]
+print(a)
+
+b=a.get("name")
+print(b)
+b=a.pop("name")
+print(a)
+a.update(name=1111)
+print(a)
+
+#get与取值的区别
+"""print(a.get("name1"))#返回空
+print(a["name1"])#代码会报错"""
+
+#数组和字典的删除
+del a["name"]
+print(a)
+a=[1,2,3]
+del a[0]
+print(a)
+
+"""
+获取用户输入的个人信息并且存储到字典中
+个人信息包括了name,age,sex"""
+a={"name":"shiyuzhen","age":26,"sex":"女"}
+print("用户shiyuzhen的个人信息：",a)
+
